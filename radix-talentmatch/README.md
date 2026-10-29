@@ -227,6 +227,35 @@ bun run test
 
 ---
 
+## ⚙️ Environment Configuration
+
+Copy `.env.example` templates if you wish to configure optional AI providers or custom ports. **No API keys are required for core execution** (runs 100% locally with deterministic AST matching).
+
+In `radix-talentmatch/backend/.env`:
+```bash
+# --- Optional AI Providers (System gracefully falls back if omitted) ---
+GROQ_API_KEY="gsk_..."
+GROQ_MODEL="openai/gpt-oss-120b"
+OPENROUTER_API_KEY="sk-or-v1-..."
+OPENROUTER_MODEL="nvidia/nemotron-3.5-lightning:free"
+GEMINI_API_KEY="AIzaSy..."
+
+# --- Supabase Database Integration (Active 118-Company Golden Record) ---
+SUPABASE_URL="https://your-project.supabase.co"
+SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+# --- Local Storage & CORS Defaults ---
+RADIX_DB_PATH="profiles.db"
+CORS_ORIGINS="http://localhost:8080,http://127.0.0.1:8080,http://localhost:5173,http://127.0.0.1:5173,http://localhost:8000,http://localhost:3000"
+```
+
+In `radix-talentmatch/frontend/.env`:
+```bash
+VITE_API_BASE_URL="http://localhost:8000"
+```
+
+---
+
 ## 👥 Presentation Team: Neural Reapers
 
 - **Team Name:** Neural Reapers
