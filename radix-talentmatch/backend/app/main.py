@@ -28,7 +28,7 @@ CANDIDATES=load_json('sample_candidates.json', [])
 JOBS=load_json('sample_job_descriptions.json', [])
 COMPANY_DATA=load_json('talent_check_company_skillsets.json', {"source":"Illustrative demo expectations","companies":{}})
 app=FastAPI(title='RADIX TalentMatch API',version='1.0.0',description='Local-first, rule-based candidate readiness and job matching demo.')
-origins=[x.strip() for x in __import__('os').getenv('CORS_ORIGINS','http://localhost:5173,http://127.0.0.1:5173').split(',')]
+origins=[x.strip() for x in __import__('os').getenv('CORS_ORIGINS','http://localhost:8080,http://127.0.0.1:8080,http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000').split(',')]
 app.add_middleware(CORSMiddleware,allow_origins=origins,allow_credentials=True,allow_methods=['*'],allow_headers=['*'])
 
 class Profile(BaseModel):

@@ -1,0 +1,468 @@
+{
+  "company": "Microsoft",
+  "company_id": 78,
+  "mode": "supabase-database",
+  "verified": true,
+  "notice": "Loaded directly from team's verified Supabase database (Company #78 of 118). Zero LLM tokens consumed.",
+  "researched_at": "2026-10-29T07:34:01.685385+00:00",
+  "providers_used": [
+    "Supabase PostgREST (118 Verified Companies Database)"
+  ],
+  "stages": [
+    {
+      "stage": "supabase_fetch",
+      "status": "ok",
+      "duration_ms": 15,
+      "detail": "Fetched 163 corporate parameters and 12 skill levels."
+    },
+    {
+      "stage": "matrix_synthesis",
+      "status": "ok",
+      "duration_ms": 5,
+      "detail": "Mapped to 12 Bloom Taxonomy categories."
+    },
+    {
+      "stage": "quality_gate",
+      "status": "ok",
+      "duration_ms": 2,
+      "detail": "Passed offline Level-3 AST quality rules."
+    }
+  ],
+  "artifacts": {
+    "expectation_matrix": {
+      "company_name": "Microsoft",
+      "tokens": {
+        "coding": {
+          "level": 6,
+          "bloom_code": "AS",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 1)."
+        },
+        "data_structures_and_algorithms": {
+          "level": 9,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 2)."
+        },
+        "object_oriented_programming_and_design": {
+          "level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 3)."
+        },
+        "aptitude_and_problem_solving": {
+          "level": 7,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 4)."
+        },
+        "communication_skills": {
+          "level": 8,
+          "bloom_code": "CR",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 5)."
+        },
+        "ai_native_engineering": {
+          "level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 6)."
+        },
+        "devops_and_cloud": {
+          "level": 8,
+          "bloom_code": "AS",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 7)."
+        },
+        "sql_and_design": {
+          "level": 8,
+          "bloom_code": "CR",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 8)."
+        },
+        "software_engineering": {
+          "level": 7,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 9)."
+        },
+        "system_design_and_architecture": {
+          "level": 9,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 10)."
+        },
+        "computer_networking": {
+          "level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 11)."
+        },
+        "operating_system": {
+          "level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified campus hiring bar for Microsoft from Supabase database (Skill Set 12)."
+        }
+      }
+    },
+    "job_role_details": [
+      {
+        "role_title": "Software Development Engineer (SDE-1 / Graduate)",
+        "role_category": "Core Engineering",
+        "opportunity_type": "Full-Time Campus Placement",
+        "job_summary": "Full-time engineering role at Microsoft working across Microsoft Azure;Microsoft 365;Windows;Dynamics 365;Power Platform;Xbox;Surface devices;LinkedIn;GitHub;Copilot family.",
+        "hiring_rounds": [
+          {
+            "round_number": 1,
+            "round_name": "Round 1: Screening & Core CS",
+            "round_category": "Coding & Aptitude",
+            "evaluation_type": "Automated / Pair-Programming",
+            "assessment_mode": "Online HackerRank / CodeSignal",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "Data Structures and Algorithms",
+              "Coding",
+              "Aptitude and Problem Solving"
+            ],
+            "typical_questions": [
+              "Two-pointer string & array manipulation under O(N) constraint",
+              "Graph traversal & cycle detection in dependency resolution"
+            ]
+          },
+          {
+            "round_number": 2,
+            "round_name": "Round 2: Technical Deep Dive",
+            "round_category": "Technical",
+            "evaluation_type": "Live Coding & Algorithm Design",
+            "assessment_mode": "Live Technical with Senior Engineer",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "Coding",
+              "Data Structures and Algorithms",
+              "Object-Oriented Programming and Design"
+            ],
+            "typical_questions": [
+              "Concurrency primitives and thread-safe data structures",
+              "Cache eviction policies (LRU/LFU) with lock-free synchronization"
+            ]
+          },
+          {
+            "round_number": 3,
+            "round_name": "Round 3: System Design & Architecture",
+            "round_category": "System Design",
+            "evaluation_type": "Architectural Whiteboard",
+            "assessment_mode": "Staff / Principal Engineer Interview",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "System Design and Architecture",
+              "DevOps and Cloud",
+              "SQL and Design"
+            ],
+            "typical_questions": [
+              "Design a scalable sub-system handling high throughput at Microsoft scale",
+              "Partitioning strategies, replication lag, and CAP theorem trade-offs"
+            ]
+          },
+          {
+            "round_number": 4,
+            "round_name": "Round 4: Bar Raiser & Delivery Ownership",
+            "round_category": "Bar Raiser",
+            "evaluation_type": "Executive & Cultural Fit",
+            "assessment_mode": "Bar Raiser Interviewer",
+            "duration_minutes": 45,
+            "skills_tested": [
+              "Communication Skills",
+              "Software Engineering"
+            ],
+            "typical_questions": [
+              "Deep dive into past technical trade-offs and architectural regrets",
+              "Demonstrating end-to-end ownership during critical production incidents"
+            ]
+          }
+        ]
+      }
+    ],
+    "skill_matrix": {
+      "company_name": "Microsoft",
+      "skills": [
+        {
+          "skill_set_code": "COD",
+          "skill_name": "Coding",
+          "required_level": 6,
+          "bloom_code": "AS",
+          "rationale": "Verified Level 6 (AS · Analysis & Synthesis) benchmark.",
+          "typical_topics": [
+            "Core Coding concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "DSA",
+          "skill_name": "Data Structures and Algorithms",
+          "required_level": 9,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 9 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Data Structures and Algorithms concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OOD",
+          "skill_name": "Object-Oriented Programming and Design",
+          "required_level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 8 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Object-Oriented Programming and Design concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "APTI",
+          "skill_name": "Aptitude and Problem Solving",
+          "required_level": 7,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 7 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Aptitude and Problem Solving concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "COMM",
+          "skill_name": "Communication Skills",
+          "required_level": 8,
+          "bloom_code": "CR",
+          "rationale": "Verified Level 8 (CR · Creation) benchmark.",
+          "typical_topics": [
+            "Core Communication Skills concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "AI",
+          "skill_name": "AI Native Engineering",
+          "required_level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 8 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core AI Native Engineering concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "CLOUD",
+          "skill_name": "DevOps and Cloud",
+          "required_level": 8,
+          "bloom_code": "AS",
+          "rationale": "Verified Level 8 (AS · Analysis & Synthesis) benchmark.",
+          "typical_topics": [
+            "Core DevOps and Cloud concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SQL",
+          "skill_name": "SQL and Design",
+          "required_level": 8,
+          "bloom_code": "CR",
+          "rationale": "Verified Level 8 (CR · Creation) benchmark.",
+          "typical_topics": [
+            "Core SQL and Design concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SWE",
+          "skill_name": "Software Engineering",
+          "required_level": 7,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 7 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Software Engineering concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SYSD",
+          "skill_name": "System Design and Architecture",
+          "required_level": 9,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 9 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core System Design and Architecture concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "NETW",
+          "skill_name": "Computer Networking",
+          "required_level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 8 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Computer Networking concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OS",
+          "skill_name": "Operating System",
+          "required_level": 8,
+          "bloom_code": "EV",
+          "rationale": "Verified Level 8 (EV · Evaluation) benchmark.",
+          "typical_topics": [
+            "Core Operating System concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        }
+      ],
+      "consensus_sources": 3,
+      "conflicts": []
+    },
+    "hiring_rounds": {
+      "company_name": "Microsoft",
+      "job_roles": [
+        {
+          "role_title": "Software Development Engineer (SDE-1 / Graduate)",
+          "role_category": "Core Engineering",
+          "opportunity_type": "Full-Time Campus Placement",
+          "job_summary": "Full-time engineering role at Microsoft working across Microsoft Azure;Microsoft 365;Windows;Dynamics 365;Power Platform;Xbox;Surface devices;LinkedIn;GitHub;Copilot family.",
+          "hiring_rounds": [
+            {
+              "round_number": 1,
+              "round_name": "Round 1: Screening & Core CS",
+              "round_category": "Coding & Aptitude",
+              "evaluation_type": "Automated / Pair-Programming",
+              "assessment_mode": "Online HackerRank / CodeSignal",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "Data Structures and Algorithms",
+                "Coding",
+                "Aptitude and Problem Solving"
+              ],
+              "typical_questions": [
+                "Two-pointer string & array manipulation under O(N) constraint",
+                "Graph traversal & cycle detection in dependency resolution"
+              ]
+            },
+            {
+              "round_number": 2,
+              "round_name": "Round 2: Technical Deep Dive",
+              "round_category": "Technical",
+              "evaluation_type": "Live Coding & Algorithm Design",
+              "assessment_mode": "Live Technical with Senior Engineer",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "Coding",
+                "Data Structures and Algorithms",
+                "Object-Oriented Programming and Design"
+              ],
+              "typical_questions": [
+                "Concurrency primitives and thread-safe data structures",
+                "Cache eviction policies (LRU/LFU) with lock-free synchronization"
+              ]
+            },
+            {
+              "round_number": 3,
+              "round_name": "Round 3: System Design & Architecture",
+              "round_category": "System Design",
+              "evaluation_type": "Architectural Whiteboard",
+              "assessment_mode": "Staff / Principal Engineer Interview",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "System Design and Architecture",
+                "DevOps and Cloud",
+                "SQL and Design"
+              ],
+              "typical_questions": [
+                "Design a scalable sub-system handling high throughput at Microsoft scale",
+                "Partitioning strategies, replication lag, and CAP theorem trade-offs"
+              ]
+            },
+            {
+              "round_number": 4,
+              "round_name": "Round 4: Bar Raiser & Delivery Ownership",
+              "round_category": "Bar Raiser",
+              "evaluation_type": "Executive & Cultural Fit",
+              "assessment_mode": "Bar Raiser Interviewer",
+              "duration_minutes": 45,
+              "skills_tested": [
+                "Communication Skills",
+                "Software Engineering"
+              ],
+              "typical_questions": [
+                "Deep dive into past technical trade-offs and architectural regrets",
+                "Demonstrating end-to-end ownership during critical production incidents"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "company_brief": {
+      "company_name": "Microsoft",
+      "about": "Microsoft (Large Cap Public Tech Conglomerate ) — Headquarters: One Microsoft Way, Redmond, Washington 98052, United States. Annual Revenue: $281.7 billion (FY2025 full year);Trailing twelve months ~$293.8 billion (as of late 2025). Employee Count: 228000. Glassdoor Rating: 4.5/5 . Tech Stack & Innovation: Very high (Copilot family;Azure AI;OpenAI partnership;integrated across products) AI adoption; Strong certifications (FedRAMP High;ISO);History of disclosures/breaches mitigated security posture.",
+      "campus_program": "Active campus hiring (Software Engineer 500+; Data Analyst 200+; Product Manager 100+; Sales 150+ )",
+      "interview_style": "Collaborative;Growth mindset;Inclusive (with recent DEI adjustments);Innovative;Customer-obsessed",
+      "prep_focus": [
+        "Hands-on Microsoft engineering standards",
+        "Domain focus: Microsoft Azure;Microsoft 365;Windows;Dynamics 365;Power Pla",
+        "System architecture & concurrency trade-offs",
+        "Behavioral values & cross-functional ownership"
+      ],
+      "raw_metrics": {
+        "glassdoor": "4.5/5 ",
+        "revenue": "$281.7 billion (FY2025 full year);Trailing twelve months ~$293.8 billion (as of late 2025)",
+        "employees": "228000",
+        "locations": "Redmond,United States; London,United Kingdom; Munich,Germany; Paris,France; Hyderabad,India; Tokyo,Japan; Shanghai,China; Toronto,Canada; Sydney,Australia; Sao Paulo,Brazil ",
+        "partners": "OpenAI;Accenture;PwC;Deloitte;Salesforce;SAP;Adobe;Oracle;ServiceNow;Red Hat;VMware;NVIDIA;Intel;AMD",
+        "competitors": "Amazon (AWS);Google (Cloud & Workspace);Apple;Salesforce;Oracle;IBM;Adobe;Cisco;ServiceNow;SAP;Meta;Zoom;Atlassian;Snowflake;Databricks"
+      }
+    }
+  },
+  "quality": {
+    "passed": true,
+    "errors": 0,
+    "warnings": 0,
+    "diagnostics": []
+  }
+}

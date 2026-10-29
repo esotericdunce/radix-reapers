@@ -1,0 +1,8 @@
+[
+ {"id":"google-swe","title":"Software Engineer","company":"Google","text":"We are looking for a Software Engineer. Requirements: strong data structures and algorithms, Python or Java, object-oriented design, system design fundamentals, distributed systems, SQL, Linux, networking, and Git. Excellent communication is valued."},
+ {"id":"google-ds","title":"Data Scientist","company":"Google","text":"Data Scientist role. Required: Python, SQL, statistics, machine learning, data visualization, experimentation, communication, and cloud computing. Experience building predictive models is preferred."},
+ {"id":"microsoft-swe","title":"Software Engineer","company":"Microsoft","text":"Software Engineer. Required skills include C#, Java or Python, data structures and algorithms, object-oriented design, cloud computing, Azure, SQL, Git, software testing, and communication."},
+ {"id":"microsoft-da","title":"Data Analyst","company":"Microsoft","text":"Data Analyst. Seeking SQL, Python, statistics, Excel, Power BI, data visualization, communication, and cloud fundamentals. Build dashboards and explain insights to stakeholders."},
+ {"id":"oracle-fs","title":"Financial Services Associate Software Engineer","company":"Oracle","text":"Associate Software Engineer in financial services. Skills: Java, SQL, data structures and algorithms, object-oriented design, cloud, Linux, REST APIs, software engineering, and communication."},
+ {"id":"oracle-support","title":"Application Support Analyst","company":"Oracle","text":"Application Support Analyst. Requirements: SQL, Linux, networking, troubleshooting, communication, Python scripting, cloud basics, and operating systems. Provide reliable application support."}
+]

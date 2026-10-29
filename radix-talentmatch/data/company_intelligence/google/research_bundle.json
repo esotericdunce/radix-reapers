@@ -4,7 +4,7 @@
   "mode": "supabase-database",
   "verified": true,
   "notice": "Loaded directly from team's verified Supabase database (Company #4 of 118). Zero LLM tokens consumed.",
-  "researched_at": "2026-10-29T07:42:23.355127+00:00",
+  "researched_at": "2026-10-29T09:36:57.252529+00:00",
   "providers_used": [
     "Supabase PostgREST (118 Verified Companies Database)"
   ],

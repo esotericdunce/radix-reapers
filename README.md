@@ -5,9 +5,10 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![TanStack](https://img.shields.io/badge/TanStack-Router%20%26%20Start-FF4154?style=for-the-badge&logo=tanstack&logoColor=white)](https://tanstack.com)
+[![CRED NeoPOP](https://img.shields.io/badge/Design-CRED%20NeoPOP%20Plinth-000000?style=for-the-badge&logo=styledcomponents&logoColor=white)](https://github.com/CRED-CLUB/neopop-web)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgREST%20Verified-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
-[![Tests](https://img.shields.io/badge/Tests-44%20Passing-success?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org)
+[![Tests](https://img.shields.io/badge/Tests-47%20Passing-success?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 ---
@@ -20,30 +21,42 @@ Every hackathon submission was provided the same core placement hub specificatio
 1. **Multi-persona Hiring Committees** that debate architectural rigor, long-term craft, and concurrency tradeoffs.
 2. **Deep System Design & Behavioral Rubrics** calibrated across **Bloom's Taxonomy** levels (*Understand* $\rightarrow$ *Apply* $\rightarrow$ *Analyze* $\rightarrow$ *Evaluate* $\rightarrow$ *Create*).
 3. **Financial ROI Placement Tiers** that focus a student's finite preparation time on the highest-yield skill delta (+₹12–18 LPA).
+4. **World-Class Tactile Aesthetics**: A luxury **CRED NeoPOP "Plinth"** interface with hairline grids, elevated 3D depth, and instantaneous micro-interactions.
 
-**RADIX TalentMatch** is an autonomous, local-first intelligence ecosystem that bridges the gap between college curricula and Tier-1 industry standards. It pairs a **deterministic AST verification engine** with a **live 118-company Supabase Golden Record** and an **agentic LLM swarm** (Groq, OpenRouter, Gemini).
+**RADIX TalentMatch** is an autonomous, local-first intelligence ecosystem that bridges the gap between college curricula and Tier-1 industry standards. It pairs a **deterministic AST verification engine** with a **live 118-company Supabase Golden Record**, an **agentic LLM swarm** (Groq, OpenRouter, Gemini), and a **CRED-grade UI/UX**.
 
 ---
 
-## 🚀 Quickstart: Unified Zero-Config Runner
+## 🚀 Quickstart
 
-Serve both the high-performance React SPA and the FastAPI REST API from a single process:
+You can run RADIX TalentMatch via the **Unified Production Runner** (FastAPI serves both backend & frontend on a single port) or in **Full-Stack Hot-Reload Dev Mode**:
 
+### Option A: Unified Single-Command Runner (Recommended)
 ```bash
-# Clone and enter the repository
-git clone git@github-esotericdunce:esotericdunce/radix-talentmatch.git
-cd radix-talentmatch
+# Clone the repository
+git clone git@github-esotericdunce:esotericdunce/radix-reapers.git
+cd radix-reapers
 
-# Run the unified single-command runner (auto-detects port, venv, and pre-built frontend)
+# Run the unified production runner (serves web app + API on port 8000)
 python3 main.py
 ```
-
 - 🌐 **Web Application:** [http://localhost:8000](http://localhost:8000)
 - 📖 **Interactive Swagger API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
-- ⚡ **Alternative Run Flags:**
-  ```bash
-  python3 main.py --port 8080 --reload --open
-  ```
+
+### Option B: Interactive Full-Stack Dev Mode (with Hot Reloading)
+```bash
+# Terminal 1: Backend
+cd radix-talentmatch/backend
+source .venv/bin/activate
+uvicorn app.main:app --reload --port 8000
+
+# Terminal 2: CRED NeoPOP Frontend (TanStack Start + Vite)
+cd radix-talentmatch/frontend
+bun install
+bun run dev
+```
+- 🎨 **CRED Refined Frontend:** [http://localhost:8080](http://localhost:8080)
+- ⚙️ **Backend REST API:** [http://localhost:8000](http://localhost:8000)
 
 ---
 
@@ -51,11 +64,9 @@ python3 main.py
 
 ```mermaid
 flowchart TB
-    subgraph Client["🖥️ Frontend Client (React 19 + TypeScript + Vite + TailwindCSS)"]
-        UI_Home["Overview & Placement Stats"]
-        UI_JD["JD Analytics & AST Extractor"]
-        UI_Resume["Resume Parser & Matcher"]
-        UI_Profile["Verified Profile Builder"]
+    subgraph Client["🖥️ CRED Refined Frontend (React 19 + TanStack Start + NeoPOP + TailwindCSS)"]
+        UI_Shell["CRED Plinth AppShell & Hairline Grid"]
+        UI_Journey["Five-Step Journey (01-05 Rail)"]
         UI_Committee["👥 Hiring Committee Arena"]
         UI_Interview["🎙️ Mock Interview Simulator"]
         UI_Radar["🎯 Career Radar & CTC Matrix"]
@@ -80,7 +91,7 @@ flowchart TB
         Research_Swarm["Multi-Model Intel Swarm\n(Groq + OpenRouter + Gemini)"]
     end
 
-    Client -->|REST & Multipart Form| Router
+    Client -->|REST & Form Data| Router
     Router --> AST_Engine
     Router --> SQLite_DB
     Router -->|PostgREST <10ms Cache| DataStore
@@ -145,16 +156,31 @@ flowchart TB
 
 ---
 
-## 📊 Complete Core Module Suite
+## 🎨 CRED NeoPOP "Plinth" Design System
 
+The application features a bespoke **CRED NeoPOP** aesthetic built for engineering elegance:
+- **Hairline Grid Architecture**: Subtle dark-mode grid canvas (`#0c0c0f`) with high-contrast borders and elevated monolithic panels.
+- **Tactile Elevated 3D Cards**: Dimensional NeoPOP components featuring sharp edge shadows and smooth depression physics.
+- **Command Palette (`⌘K` / `Ctrl+K`)**: Instant keyboard-driven navigation across all modules, candidates, and labs.
+- **Responsive 01–05 Guided Journey**: Step-by-step placement rail guiding students from parsing job descriptions to final skill matching.
+
+---
+
+## 📊 Complete Module & Labs Suite
+
+### 🛤️ The 01–05 Placement Journey Rail
+| Step | Module | Route | Key Capabilities |
+| :---: | :--- | :--- | :--- |
+| **01** | **Read the role** | `/jd-analytics` | Deterministic phrase AST extraction, category distribution, evidence snippet extraction |
+| **02** | **Read the resume** | `/resume-parser` | Multipart PDF/DOCX/TXT ingestion, section boundary parsing, synthetic sample generator |
+| **03** | **Shape the profile**| `/profile` | Editable verified skill ledger, 1–10 Bloom ratings, SQLite persistence, custom roles |
+| **04** | **Check readiness** | `/talent-check` | Real-time comparison against 118 Supabase company profiles, category breakdown |
+| **05** | **Measure the fit** | `/skill-matching` | Multi-candidate side-by-side comparison, CSV export, print-to-PDF, gap analysis |
+
+### 🔬 The Advanced Labs
 | Module | Route | Key Capabilities |
 | :--- | :--- | :--- |
 | **Overview** | `/` | Live candidate readiness matrix, assessment history, radar chart, quick-action rail |
-| **JD Analytics** | `/jd-analytics` | Deterministic phrase AST extraction, category distribution, evidence snippet extraction |
-| **Resume Parser** | `/resume-parser` | Multipart PDF/DOCX/TXT ingestion, section boundary parsing, synthetic sample generator |
-| **Profile Builder** | `/profile-builder` | Editable verified skill ledger, 1–10 Bloom ratings, SQLite persistence, custom roles |
-| **Talent Check** | `/talent-check` | Real-time comparison against 118 Supabase company profiles, category breakdown |
-| **Skill Matching** | `/skill-match` | Multi-candidate side-by-side comparison, CSV export, print-to-PDF, gap analysis |
 | **Hiring Committee** | `/hiring-committee` | 3-agent deliberative debate (Bar Raiser, Tech Lead, Hiring Manager), consensus vote |
 | **Mock Interview Arena** | `/interview-arena` | Live scenario simulation, 4-axis scorecard, follow-ups, 1-click profile upgrade |
 | **Career Radar** | `/career-radar` | Super Dream / Dream readiness, highest-ROI skill jumps, Google X-Y-Z bullets |
@@ -174,59 +200,27 @@ flowchart TB
 | `POST` | `/api/resume/parse` | Extract skills, education, and experience from resume |
 | `POST` | `/api/profile` | Create new candidate profile in SQLite database |
 | `PUT` | `/api/profile` | Update existing profile and skill levels |
-| `POST` | `/api/hiring-committee` | Trigger 3-agent Hiring Committee deliberation and consensus |
-| `POST` | `/api/mock-interview/generate` | Generate domain-specific mock interview scenario |
-| `POST` | `/api/mock-interview/evaluate` | Evaluate candidate response across 4 production rubrics |
-| `POST` | `/api/mock-interview/upgrade-profile` | Apply earned Bloom skill rating upgrade to database |
-| `POST` | `/api/career-radar` | Calculate placement tier readiness and ROI skill roadmap |
-| `POST` | `/api/intelligence/company` | Fetch verified company dossier (Supabase-first with LLM fallback) |
+| `POST` | `/api/committee/deliberate` | Trigger 3-agent Hiring Committee deliberation and consensus |
+| `POST` | `/api/interview/start` | Generate domain-specific mock interview scenario |
+| `POST` | `/api/interview/evaluate` | Evaluate candidate response across 4 production rubrics |
+| `GET` | `/api/career/radar` | Calculate placement tier readiness and ROI skill roadmap |
+| `POST` | `/api/resume/tailor-bullet` | Generate Google X-Y-Z formula resume bullet |
+| `GET` | `/api/intelligence/company/{name}` | Fetch verified company dossier (Supabase-first with LLM fallback) |
 
 ---
 
-## 🧪 Testing & Quality Assurance
+## 🧪 Testing & Verification
 
-The codebase includes an exhaustive test suite covering API contracts, deterministic scoring, multi-agent differentiators, and Supabase database integration:
+Comprehensive test suites for both backend and frontend:
 
 ```bash
+# 1. Backend: 44 Passing PyTest Suites (API, Intelligence, Differentiators, Supabase)
 cd radix-talentmatch
 PYTHONPATH=backend backend/.venv/bin/pytest backend/tests -v
-```
 
-```text
-============================== test session starts ==============================
-collected 44 items
-
-backend/tests/test_api.py .........................                      [ 56%]
-backend/tests/test_differentiators.py ..........                         [ 79%]
-backend/tests/test_intelligence.py ........                              [ 97%]
-backend/tests/test_supabase_integration.py .                            [100%]
-
-============================== 44 passed in 2.14s ===============================
-```
-
----
-
-## ⚙️ Environment Configuration
-
-Create a `.env` file in `radix-talentmatch/backend/.env` (or copy `.env.example`):
-
-```bash
-# --- Optional AI Providers (System gracefully falls back if omitted) ---
-GROQ_API_KEY="gsk_..."
-GROQ_MODEL="openai/gpt-oss-120b"
-
-OPENROUTER_API_KEY="sk-or-v1-..."
-OPENROUTER_MODEL="nvidia/nemotron-3.5-lightning:free"
-
-GEMINI_API_KEY="AIzaSy..."
-
-# --- Supabase Database Integration (Active 118-Company Golden Record) ---
-SUPABASE_URL="https://your-project.supabase.co"
-SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-
-# --- Local Storage Configuration ---
-RADIX_DB_PATH="profiles.db"
-CORS_ORIGINS="http://localhost:5173,http://localhost:8000"
+# 2. Frontend: Passing Vitest Suites (Scoring Formulas & TanStack Routing)
+cd radix-talentmatch/frontend
+bun run test
 ```
 
 ---

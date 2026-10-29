@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import "./radix/radix.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -73,10 +74,10 @@
 }
 
 :root {
-  --radius: 4px;
-  --background: oklch(0.118 0.004 270);
+  --radius: 2px;
+  --background: oklch(0.105 0.004 270);
   --foreground: oklch(0.962 0.008 85);
-  --surface: oklch(0.152 0.005 270);
+  --surface: oklch(0.138 0.005 270);
   --surface-2: oklch(0.19 0.006 270);
   --card: var(--surface);
   --card-foreground: var(--foreground);
@@ -94,8 +95,8 @@
   --signal: oklch(0.84 0.13 82);
   --destructive: oklch(0.66 0.2 22);
   --destructive-foreground: var(--foreground);
-  --border: oklch(1 0 0 / 8%);
-  --border-strong: oklch(1 0 0 / 16%);
+  --border: oklch(1 0 0 / 7%);
+  --border-strong: oklch(1 0 0 / 13%);
   --input: oklch(1 0 0 / 12%);
   --ring: oklch(0.84 0.13 82 / 60%);
 
@@ -208,9 +209,7 @@
 
 @utility hairline-grid {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 3%) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 3%) 1px, transparent 1px);
-  background-size: 64px 64px;
+    radial-gradient(ellipse 80% 50% at 70% -10%, color-mix(in oklab, var(--signal) 7%, transparent), transparent 60%);
 }
 
 @utility no-scrollbar {

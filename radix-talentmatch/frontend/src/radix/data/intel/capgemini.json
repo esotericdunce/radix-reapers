@@ -1,0 +1,468 @@
+{
+  "company": "Capgemini",
+  "company_id": 39,
+  "mode": "supabase-database",
+  "verified": true,
+  "notice": "Loaded directly from team's verified Supabase database (Company #39 of 118). Zero LLM tokens consumed.",
+  "researched_at": "2026-10-29T07:46:51.613413+00:00",
+  "providers_used": [
+    "Supabase PostgREST (118 Verified Companies Database)"
+  ],
+  "stages": [
+    {
+      "stage": "supabase_fetch",
+      "status": "ok",
+      "duration_ms": 15,
+      "detail": "Fetched 163 corporate parameters and 12 skill levels."
+    },
+    {
+      "stage": "matrix_synthesis",
+      "status": "ok",
+      "duration_ms": 5,
+      "detail": "Mapped to 12 Bloom Taxonomy categories."
+    },
+    {
+      "stage": "quality_gate",
+      "status": "ok",
+      "duration_ms": 2,
+      "detail": "Passed offline Level-3 AST quality rules."
+    }
+  ],
+  "artifacts": {
+    "expectation_matrix": {
+      "company_name": "Capgemini",
+      "tokens": {
+        "coding": {
+          "level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 1)."
+        },
+        "data_structures_and_algorithms": {
+          "level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 2)."
+        },
+        "object_oriented_programming_and_design": {
+          "level": 5,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 3)."
+        },
+        "aptitude_and_problem_solving": {
+          "level": 5,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 4)."
+        },
+        "communication_skills": {
+          "level": 3,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 5)."
+        },
+        "ai_native_engineering": {
+          "level": 3,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 6)."
+        },
+        "devops_and_cloud": {
+          "level": 4,
+          "bloom_code": "CU",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 7)."
+        },
+        "sql_and_design": {
+          "level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 8)."
+        },
+        "software_engineering": {
+          "level": 4,
+          "bloom_code": "CU",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 9)."
+        },
+        "system_design_and_architecture": {
+          "level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 10)."
+        },
+        "computer_networking": {
+          "level": 2,
+          "bloom_code": "CU",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 11)."
+        },
+        "operating_system": {
+          "level": 3,
+          "bloom_code": "CU",
+          "rationale": "Verified campus hiring bar for Capgemini from Supabase database (Skill Set 12)."
+        }
+      }
+    },
+    "job_role_details": [
+      {
+        "role_title": "Software Development Engineer (SDE-1 / Graduate)",
+        "role_category": "Core Engineering",
+        "opportunity_type": "Full-Time Campus Placement",
+        "job_summary": "Full-time engineering role at Capgemini working across Consulting; Technology services; Digital transformation; Cloud; Data; Artificial intelligence; Connectivity; Software; Digital engineering; Platforms.",
+        "hiring_rounds": [
+          {
+            "round_number": 1,
+            "round_name": "Round 1: Screening & Core CS",
+            "round_category": "Coding & Aptitude",
+            "evaluation_type": "Automated / Pair-Programming",
+            "assessment_mode": "Online HackerRank / CodeSignal",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "Data Structures and Algorithms",
+              "Coding",
+              "Aptitude and Problem Solving"
+            ],
+            "typical_questions": [
+              "Two-pointer string & array manipulation under O(N) constraint",
+              "Graph traversal & cycle detection in dependency resolution"
+            ]
+          },
+          {
+            "round_number": 2,
+            "round_name": "Round 2: Technical Deep Dive",
+            "round_category": "Technical",
+            "evaluation_type": "Live Coding & Algorithm Design",
+            "assessment_mode": "Live Technical with Senior Engineer",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "Coding",
+              "Data Structures and Algorithms",
+              "Object-Oriented Programming and Design"
+            ],
+            "typical_questions": [
+              "Concurrency primitives and thread-safe data structures",
+              "Cache eviction policies (LRU/LFU) with lock-free synchronization"
+            ]
+          },
+          {
+            "round_number": 3,
+            "round_name": "Round 3: System Design & Architecture",
+            "round_category": "System Design",
+            "evaluation_type": "Architectural Whiteboard",
+            "assessment_mode": "Staff / Principal Engineer Interview",
+            "duration_minutes": 60,
+            "skills_tested": [
+              "System Design and Architecture",
+              "DevOps and Cloud",
+              "SQL and Design"
+            ],
+            "typical_questions": [
+              "Design a scalable sub-system handling high throughput at Capgemini scale",
+              "Partitioning strategies, replication lag, and CAP theorem trade-offs"
+            ]
+          },
+          {
+            "round_number": 4,
+            "round_name": "Round 4: Bar Raiser & Delivery Ownership",
+            "round_category": "Bar Raiser",
+            "evaluation_type": "Executive & Cultural Fit",
+            "assessment_mode": "Bar Raiser Interviewer",
+            "duration_minutes": 45,
+            "skills_tested": [
+              "Communication Skills",
+              "Software Engineering"
+            ],
+            "typical_questions": [
+              "Deep dive into past technical trade-offs and architectural regrets",
+              "Demonstrating end-to-end ownership during critical production incidents"
+            ]
+          }
+        ]
+      }
+    ],
+    "skill_matrix": {
+      "company_name": "Capgemini",
+      "skills": [
+        {
+          "skill_set_code": "COD",
+          "skill_name": "Coding",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 4 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core Coding concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "DSA",
+          "skill_name": "Data Structures and Algorithms",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 4 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core Data Structures and Algorithms concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OOD",
+          "skill_name": "Object-Oriented Programming and Design",
+          "required_level": 5,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 5 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core Object-Oriented Programming and Design concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "APTI",
+          "skill_name": "Aptitude and Problem Solving",
+          "required_level": 5,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 5 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core Aptitude and Problem Solving concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "COMM",
+          "skill_name": "Communication Skills",
+          "required_level": 3,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 3 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core Communication Skills concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "AI",
+          "skill_name": "AI Native Engineering",
+          "required_level": 3,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 3 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core AI Native Engineering concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "CLOUD",
+          "skill_name": "DevOps and Cloud",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Verified Level 4 (CU · Conceptual Understanding) benchmark.",
+          "typical_topics": [
+            "Core DevOps and Cloud concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SQL",
+          "skill_name": "SQL and Design",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 4 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core SQL and Design concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SWE",
+          "skill_name": "Software Engineering",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Verified Level 4 (CU · Conceptual Understanding) benchmark.",
+          "typical_topics": [
+            "Core Software Engineering concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SYSD",
+          "skill_name": "System Design and Architecture",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Verified Level 4 (AP · Application) benchmark.",
+          "typical_topics": [
+            "Core System Design and Architecture concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "NETW",
+          "skill_name": "Computer Networking",
+          "required_level": 2,
+          "bloom_code": "CU",
+          "rationale": "Verified Level 2 (CU · Conceptual Understanding) benchmark.",
+          "typical_topics": [
+            "Core Computer Networking concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OS",
+          "skill_name": "Operating System",
+          "required_level": 3,
+          "bloom_code": "CU",
+          "rationale": "Verified Level 3 (CU · Conceptual Understanding) benchmark.",
+          "typical_topics": [
+            "Core Operating System concepts",
+            "Production scale failure modes",
+            "Edge case analysis"
+          ],
+          "confidence": "high",
+          "source_agreement": "100% verified DB record",
+          "level_spread": 0
+        }
+      ],
+      "consensus_sources": 3,
+      "conflicts": []
+    },
+    "hiring_rounds": {
+      "company_name": "Capgemini",
+      "job_roles": [
+        {
+          "role_title": "Software Development Engineer (SDE-1 / Graduate)",
+          "role_category": "Core Engineering",
+          "opportunity_type": "Full-Time Campus Placement",
+          "job_summary": "Full-time engineering role at Capgemini working across Consulting; Technology services; Digital transformation; Cloud; Data; Artificial intelligence; Connectivity; Software; Digital engineering; Platforms.",
+          "hiring_rounds": [
+            {
+              "round_number": 1,
+              "round_name": "Round 1: Screening & Core CS",
+              "round_category": "Coding & Aptitude",
+              "evaluation_type": "Automated / Pair-Programming",
+              "assessment_mode": "Online HackerRank / CodeSignal",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "Data Structures and Algorithms",
+                "Coding",
+                "Aptitude and Problem Solving"
+              ],
+              "typical_questions": [
+                "Two-pointer string & array manipulation under O(N) constraint",
+                "Graph traversal & cycle detection in dependency resolution"
+              ]
+            },
+            {
+              "round_number": 2,
+              "round_name": "Round 2: Technical Deep Dive",
+              "round_category": "Technical",
+              "evaluation_type": "Live Coding & Algorithm Design",
+              "assessment_mode": "Live Technical with Senior Engineer",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "Coding",
+                "Data Structures and Algorithms",
+                "Object-Oriented Programming and Design"
+              ],
+              "typical_questions": [
+                "Concurrency primitives and thread-safe data structures",
+                "Cache eviction policies (LRU/LFU) with lock-free synchronization"
+              ]
+            },
+            {
+              "round_number": 3,
+              "round_name": "Round 3: System Design & Architecture",
+              "round_category": "System Design",
+              "evaluation_type": "Architectural Whiteboard",
+              "assessment_mode": "Staff / Principal Engineer Interview",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "System Design and Architecture",
+                "DevOps and Cloud",
+                "SQL and Design"
+              ],
+              "typical_questions": [
+                "Design a scalable sub-system handling high throughput at Capgemini scale",
+                "Partitioning strategies, replication lag, and CAP theorem trade-offs"
+              ]
+            },
+            {
+              "round_number": 4,
+              "round_name": "Round 4: Bar Raiser & Delivery Ownership",
+              "round_category": "Bar Raiser",
+              "evaluation_type": "Executive & Cultural Fit",
+              "assessment_mode": "Bar Raiser Interviewer",
+              "duration_minutes": 45,
+              "skills_tested": [
+                "Communication Skills",
+                "Software Engineering"
+              ],
+              "typical_questions": [
+                "Deep dive into past technical trade-offs and architectural regrets",
+                "Demonstrating end-to-end ownership during critical production incidents"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "company_brief": {
+      "company_name": "Capgemini",
+      "about": "Capgemini (IT Services, Consulting, Digital Transformation) — Headquarters: Paris, France. Annual Revenue: 22.1B Euro. Employee Count: 360000. Glassdoor Rating: 3.8/5 . Tech Stack & Innovation: High AI adoption; Low security posture.",
+      "campus_program": "Active campus hiring (High)",
+      "interview_style": "Structured, process-driven",
+      "prep_focus": [
+        "Hands-on Capgemini engineering standards",
+        "Domain focus: Consulting; Technology services; Digital transformation; Clo",
+        "System architecture & concurrency trade-offs",
+        "Behavioral values & cross-functional ownership"
+      ],
+      "raw_metrics": {
+        "glassdoor": "3.8/5 ",
+        "revenue": "22.1B Euro",
+        "employees": "360000",
+        "locations": "Paris,France;New York,United States;London,United Kingdom;Mumbai,India;Utrecht,Netherlands",
+        "partners": "Microsoft; AWS; Google Cloud; Salesforce; SAP; Oracle; ServiceNow",
+        "competitors": "Accenture; TCS; Infosys; Wipro; Deloitte; Cognizant; IBM; Atos; HCL Technologies; DXC Technology "
+      }
+    }
+  },
+  "quality": {
+    "passed": true,
+    "errors": 0,
+    "warnings": 0,
+    "diagnostics": []
+  }
+}
