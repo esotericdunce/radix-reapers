@@ -1,0 +1,47 @@
+# ==============================================================================
+# RADIX TalentMatch - Git Ignore Specification
+# ==============================================================================
+
+# Freebuff & Caches
+.freebuff/
+*freebuff*
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+*.local
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+profiles.db
+backend/profiles.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend
+node_modules/
+dist/
+.vite/
+frontend/dist/
+frontend/node_modules/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

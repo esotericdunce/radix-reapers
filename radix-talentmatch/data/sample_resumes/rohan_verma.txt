@@ -1,0 +1,7 @@
+SYNTHETIC DEMO RESUME
+Rohan Verma
+Email: rohan.verma@example.com
+Education: B.Tech Electronics and Communication, Summit University, 2026
+Skills: C++, Data Structures and Algorithms, Linux, Networking, Communication
+Projects: IoT sensor monitoring prototype
+Hackathons: Summit Buildathon

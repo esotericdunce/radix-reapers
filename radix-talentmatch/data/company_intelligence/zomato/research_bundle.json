@@ -1,0 +1,482 @@
+{
+  "company": "Zomato",
+  "researched_at": "2026-10-29T07:42:23Z",
+  "stages": [
+    {
+      "stage": "research (offline fallback)",
+      "status": "ok",
+      "duration_ms": 0,
+      "detail": "No LLM keys configured; bundled illustrative snapshot used"
+    }
+  ],
+  "mode": "offline-fallback",
+  "verified": false,
+  "notice": "This company has NOT been researched by LLM agents. Add provider keys and re-run for verified data.",
+  "providers_used": [],
+  "langgraph": true,
+  "artifacts": {
+    "golden_record": {},
+    "expectation_matrix": {
+      "companies": "Zomato",
+      "tokens": {
+        "coding": {
+          "level": 7,
+          "bloom_code": "AP",
+          "raw": "7-AP",
+          "generic": true
+        },
+        "data_structures_and_algorithms": {
+          "level": 7,
+          "bloom_code": "AS",
+          "raw": "7-AS",
+          "generic": true
+        },
+        "object_oriented_programming_and_design": {
+          "level": 5,
+          "bloom_code": "AP",
+          "raw": "5-AP",
+          "generic": true
+        },
+        "aptitude_and_problem_solving": {
+          "level": 6,
+          "bloom_code": "AP",
+          "raw": "6-AP",
+          "generic": true
+        },
+        "communication_skills": {
+          "level": 5,
+          "bloom_code": "CU",
+          "raw": "5-CU",
+          "generic": true
+        },
+        "ai_native_engineering": {
+          "level": 4,
+          "bloom_code": "AP",
+          "raw": "4-AP",
+          "generic": true
+        },
+        "devops_and_cloud": {
+          "level": 4,
+          "bloom_code": "CU",
+          "raw": "4-CU",
+          "generic": true
+        },
+        "sql_and_design": {
+          "level": 6,
+          "bloom_code": "AP",
+          "raw": "6-AP",
+          "generic": true
+        },
+        "software_engineering": {
+          "level": 6,
+          "bloom_code": "AP",
+          "raw": "6-AP",
+          "generic": true
+        },
+        "system_design_and_architecture": {
+          "level": 5,
+          "bloom_code": "EV",
+          "raw": "5-EV",
+          "generic": true
+        },
+        "computer_networking": {
+          "level": 4,
+          "bloom_code": "CU",
+          "raw": "4-CU",
+          "generic": true
+        },
+        "operating_system": {
+          "level": 5,
+          "bloom_code": "CU",
+          "raw": "5-CU",
+          "generic": true
+        }
+      }
+    },
+    "skill_matrix": {
+      "company_name": "Zomato",
+      "skills": [
+        {
+          "skill_set_code": "COD",
+          "skill_name": "Coding",
+          "required_level": 7,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Clean Code",
+            "Language Idioms",
+            "Edge Cases",
+            "Debugging"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "DSA",
+          "skill_name": "Data Structures & Algorithms",
+          "required_level": 7,
+          "bloom_code": "AS",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Arrays & Strings",
+            "Trees & Graphs",
+            "Dynamic Programming",
+            "Time/Space Complexity"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OOD",
+          "skill_name": "Object-Oriented Design",
+          "required_level": 5,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Design Patterns",
+            "SOLID Principles",
+            "Class Modelling",
+            "Encapsulation"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "APTI",
+          "skill_name": "Aptitude & Problem Solving",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Logical Reasoning",
+            "Quantitative Analysis",
+            "Puzzles",
+            "Critical Thinking"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "COMM",
+          "skill_name": "Communication",
+          "required_level": 5,
+          "bloom_code": "CU",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Technical Articulation",
+            "Cross-functional Collaboration",
+            "Interview Presence"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "AI",
+          "skill_name": "AI/ML Engineering",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Machine Learning Fundamentals",
+            "LLM APIs & Prompting",
+            "Model Evaluation"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "CLOUD",
+          "skill_name": "DevOps & Cloud",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Containers (Docker)",
+            "CI/CD Pipelines",
+            "AWS/Cloud Basics",
+            "Infrastructure"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SQL",
+          "skill_name": "SQL & Data Modelling",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Complex Queries & Joins",
+            "Schema Normalization",
+            "Indexing & Performance"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SWE",
+          "skill_name": "Software Engineering",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Git & Version Control",
+            "Testing & QA",
+            "API Design (REST/gRPC)",
+            "Agile Lifecycle"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SYSD",
+          "skill_name": "System Design & Architecture",
+          "required_level": 5,
+          "bloom_code": "EV",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "High Availability",
+            "Microservices",
+            "Caching & Queues",
+            "Scalability"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "NETW",
+          "skill_name": "Computer Networking",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "TCP/IP & OSI",
+            "HTTP/HTTPS & DNS",
+            "Sockets",
+            "Network Security"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OS",
+          "skill_name": "Operating Systems",
+          "required_level": 5,
+          "bloom_code": "CU",
+          "rationale": "Hiring bar expectation for Zomato campus engineering candidates.",
+          "typical_topics": [
+            "Process & Threading",
+            "Memory Management",
+            "Concurrency & Locks",
+            "Linux Shell & File Systems"
+          ],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        }
+      ],
+      "consensus_sources": 0,
+      "conflicts": []
+    },
+    "hiring_rounds": {
+      "company_name": "Zomato",
+      "job_role_details": [
+        {
+          "opportunity_type": "Employment",
+          "role_title": "Software Engineer (illustrative)",
+          "role_category": "SDE",
+          "job_description": "Illustrative offline snapshot for Zomato; run the LangGraph research pipeline for verified data.",
+          "compensation": "Not publicly standardised",
+          "ctc_or_stipend": 0,
+          "bonus": "Not publicly known",
+          "benefits_summary": "Not publicly known",
+          "hiring_rounds": [
+            {
+              "round_number": 1,
+              "round_name": "Coding Test",
+              "round_category": "Coding Test",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Online",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "DSA",
+                  "typical_questions": "Generic practice task; research this company to replace this snapshot."
+                },
+                {
+                  "skill_set_code": "COD",
+                  "typical_questions": "Implement a small utility function."
+                }
+              ],
+              "skills_tested": [
+                "DSA",
+                "COD"
+              ],
+              "typical_questions": [
+                "Generic practice task; research this company to replace this snapshot.",
+                "Implement a small utility function."
+              ]
+            },
+            {
+              "round_number": 2,
+              "round_name": "Technical Interview",
+              "round_category": "Interview",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "SYSD",
+                  "typical_questions": "Design a small system end to end."
+                },
+                {
+                  "skill_set_code": "OOD",
+                  "typical_questions": "Model a familiar domain using objects."
+                }
+              ],
+              "skills_tested": [
+                "SYSD",
+                "OOD"
+              ],
+              "typical_questions": [
+                "Design a small system end to end.",
+                "Model a familiar domain using objects."
+              ]
+            },
+            {
+              "round_number": 3,
+              "round_name": "HR Interview",
+              "round_category": "Interview",
+              "evaluation_type": "HR",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "COMM",
+                  "typical_questions": "Tell me about a project you led."
+                }
+              ],
+              "skills_tested": [
+                "COMM"
+              ],
+              "typical_questions": [
+                "Tell me about a project you led."
+              ]
+            }
+          ]
+        }
+      ],
+      "job_roles": [
+        {
+          "role_title": "Software Engineer (illustrative)",
+          "role_category": "SDE",
+          "opportunity_type": "Employment",
+          "job_summary": "Illustrative offline snapshot for Zomato; run the LangGraph research pipeline for verified data.",
+          "hiring_rounds": [
+            {
+              "round_number": 1,
+              "round_name": "Coding Test",
+              "round_category": "Coding Test",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Online",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "DSA",
+                  "typical_questions": "Generic practice task; research this company to replace this snapshot."
+                },
+                {
+                  "skill_set_code": "COD",
+                  "typical_questions": "Implement a small utility function."
+                }
+              ],
+              "skills_tested": [
+                "DSA",
+                "COD"
+              ],
+              "typical_questions": [
+                "Generic practice task; research this company to replace this snapshot.",
+                "Implement a small utility function."
+              ]
+            },
+            {
+              "round_number": 2,
+              "round_name": "Technical Interview",
+              "round_category": "Interview",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "SYSD",
+                  "typical_questions": "Design a small system end to end."
+                },
+                {
+                  "skill_set_code": "OOD",
+                  "typical_questions": "Model a familiar domain using objects."
+                }
+              ],
+              "skills_tested": [
+                "SYSD",
+                "OOD"
+              ],
+              "typical_questions": [
+                "Design a small system end to end.",
+                "Model a familiar domain using objects."
+              ]
+            },
+            {
+              "round_number": 3,
+              "round_name": "HR Interview",
+              "round_category": "Interview",
+              "evaluation_type": "HR",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skill_sets": [
+                {
+                  "skill_set_code": "COMM",
+                  "typical_questions": "Tell me about a project you led."
+                }
+              ],
+              "skills_tested": [
+                "COMM"
+              ],
+              "typical_questions": [
+                "Tell me about a project you led."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "company_brief": {
+      "company_name": "Zomato",
+      "about": "Bundled offline snapshot derived from illustrative expectations for Zomato.",
+      "campus_program": "Graduate Campus Recruitment Program",
+      "interview_style": "Problem-solving, algorithmic design, and core engineering depth",
+      "prep_focus": [
+        "Focus on Coding and Data Structures & Algorithms",
+        "Practice problem breakdown and articulating algorithmic tradeoffs",
+        "Demonstrate clean architectural code and edge-case handling"
+      ]
+    }
+  },
+  "quality": {
+    "passed": true,
+    "errors": 0,
+    "warnings": 0,
+    "diagnostics": []
+  },
+  "quality_report_md": "# Data quality report — Zomato\n\nVerdict: **PASS** · 0 error(s), 0 warning(s) from the offline Level-3-style gate.\n\nNo diagnostics. All rules reported clean."
+}

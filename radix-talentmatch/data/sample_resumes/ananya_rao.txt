@@ -1,0 +1,7 @@
+Ananya Rao
+Email: ananya.rao@example.com
+Education: B.Tech Computer Science, Northstar Institute, 2027
+Skills: Python, SQL, Machine Learning, Data Structures and Algorithms, Git
+Projects: Campus placement predictor using Python and scikit-learn
+Hackathons: Northstar AI Sprint finalist
+Certifications: Intro to Machine Learning

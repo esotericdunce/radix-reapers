@@ -1,0 +1,339 @@
+{
+  "company": "Atlassian",
+  "researched_at": "2026-10-28T20:14:21Z",
+  "stages": [
+    {
+      "stage": "research (offline fallback)",
+      "status": "ok",
+      "duration_ms": 0,
+      "detail": "No LLM keys configured; bundled illustrative snapshot used"
+    }
+  ],
+  "mode": "offline-fallback",
+  "verified": false,
+  "notice": "This company has NOT been researched by LLM agents. Add provider keys and re-run for verified data.",
+  "artifacts": {
+    "skill_matrix": {
+      "company_name": "Atlassian",
+      "skills": [
+        {
+          "skill_set_code": "COD",
+          "skill_name": "Coding",
+          "required_level": 7,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "DSA",
+          "skill_name": "Data Structures & Algorithms",
+          "required_level": 7,
+          "bloom_code": "AS",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OOD",
+          "skill_name": "Object-Oriented Design",
+          "required_level": 5,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "APTI",
+          "skill_name": "Aptitude & Problem Solving",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "COMM",
+          "skill_name": "Communication",
+          "required_level": 5,
+          "bloom_code": "CU",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "AI",
+          "skill_name": "AI/ML Engineering",
+          "required_level": 4,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "CLOUD",
+          "skill_name": "DevOps & Cloud",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SQL",
+          "skill_name": "SQL & Data Modelling",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SWE",
+          "skill_name": "Software Engineering",
+          "required_level": 6,
+          "bloom_code": "AP",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "SYSD",
+          "skill_name": "System Design",
+          "required_level": 5,
+          "bloom_code": "EV",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "NETW",
+          "skill_name": "Computer Networking",
+          "required_level": 4,
+          "bloom_code": "CU",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        },
+        {
+          "skill_set_code": "OS",
+          "skill_name": "Operating Systems",
+          "required_level": 5,
+          "bloom_code": "CU",
+          "rationale": "Generic campus-hiring expectation; no verified research for Atlassian yet.",
+          "typical_topics": [],
+          "confidence": "low",
+          "source_agreement": "0/0 (offline heuristics)",
+          "level_spread": 0
+        }
+      ],
+      "consensus_sources": 0,
+      "conflicts": []
+    },
+    "hiring_rounds": {
+      "company_name": "Atlassian",
+      "job_roles": [
+        {
+          "role_title": "Software Engineer (illustrative)",
+          "role_category": "SDE",
+          "opportunity_type": "Employment",
+          "job_summary": "Illustrative offline snapshot for Atlassian; run research with LLM keys for genuine data.",
+          "hiring_rounds": [
+            {
+              "round_number": 1,
+              "round_name": "Coding Test",
+              "round_category": "Coding Test",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Online",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "DSA",
+                "COD"
+              ],
+              "typical_questions": [
+                "Generic practice tasks; research this company to replace this snapshot."
+              ]
+            },
+            {
+              "round_number": 2,
+              "round_name": "Interview",
+              "round_category": "Interview",
+              "evaluation_type": "Technical",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "DSA",
+                "SYSD",
+                "OOD"
+              ],
+              "typical_questions": [
+                "Generic practice tasks; research this company to replace this snapshot."
+              ]
+            },
+            {
+              "round_number": 3,
+              "round_name": "Interview",
+              "round_category": "Interview",
+              "evaluation_type": "HR",
+              "assessment_mode": "Onsite",
+              "duration_minutes": 60,
+              "skills_tested": [
+                "COMM"
+              ],
+              "typical_questions": [
+                "Generic practice tasks; research this company to replace this snapshot."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "company_brief": {
+      "company_name": "Atlassian",
+      "about": "Bundled offline snapshot derived from illustrative expectations for Atlassian.",
+      "campus_program": "Not publicly known",
+      "interview_style": "Not publicly known",
+      "prep_focus": [
+        "Add LLM API keys and run the research pipeline for a verified brief."
+      ]
+    }
+  },
+  "quality": {
+    "passed": true,
+    "errors": 0,
+    "warnings": 12,
+    "diagnostics": [
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/0/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/1/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/2/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/3/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/4/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/5/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/6/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/7/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/8/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/9/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/10/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      },
+      {
+        "rule": "text_clean",
+        "severity": "warn",
+        "artifact": "skill_matrix",
+        "path": "skills/11/rationale",
+        "message": "contains delimiter characters (| or ;)",
+        "scope": "Per-Parameter",
+        "category": "formatting"
+      }
+    ]
+  },
+  "quality_report_md": "# Data quality report — Atlassian\n\nVerdict: **PASS** · 0 error(s), 12 warning(s) from the offline Level-3-style gate.\n\n## Warns (12)\n- **[skill_matrix/skills/0/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/1/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/2/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/3/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/4/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/5/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/6/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/7/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/8/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/9/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/10/rationale] text_clean** — contains delimiter characters (| or ;)\n- **[skill_matrix/skills/11/rationale] text_clean** — contains delimiter characters (| or ;)\n"
+}

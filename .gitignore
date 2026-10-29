@@ -1,0 +1,103 @@
+# ==============================================================================
+# RADIX TalentMatch / Neural Reapers - Git Ignore Specification
+# ==============================================================================
+
+# Freebuff / Session Agent Caches
+.freebuff/
+*freebuff*
+.orchestrator/
+
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+*.local
+
+# Database & Persistent State
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+profiles.db
+backend/profiles.db
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Node & Frontend Build Artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+*.local
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+
+# Editor & OS Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs & Temporary Files
+*.log
+logs/
+temp/
+tmp/
+scratch/

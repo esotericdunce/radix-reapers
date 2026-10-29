@@ -1,0 +1,6 @@
+Karthik Subramaniam
+Email: karthik.s@example.com
+Education: B.Tech Information Technology, Meridian College, 2026
+Skills: Java, Data Structures and Algorithms, Object-Oriented Design, Spring Boot, SQL
+Projects: Library management REST API with Java and Spring Boot
+Internships: Backend engineering intern, Sample Labs

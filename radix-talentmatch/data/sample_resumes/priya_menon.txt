@@ -1,0 +1,8 @@
+SYNTHETIC DEMO RESUME
+Priya Menon
+Email: priya.menon@example.com
+Education: B.Sc. Computer Science, Lakeside University, 2027
+Skills: SQL, Python, Statistics, Power BI, Communication
+Projects: Retail sales dashboard and cohort analysis
+Internships: Data analyst intern, Sample Retail
+Certifications: Power BI fundamentals
