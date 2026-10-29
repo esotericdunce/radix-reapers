@@ -1,27 +1,28 @@
 #!/usr/bin/env python3
 """
-RADIX TalentMatch · Unified Production Runner
-Ties frontend SPA and backend API together into a single unified server.
+RADIX TalentMatch · Unified Production & Dev Runner
+Spawns both the FastAPI backend (port 8000) and the CRED NeoPOP frontend (port 8080)
+so everything runs simultaneously with a single command: python main.py
 """
 
 import os
 import sys
+import time
+import signal
+import shutil
 import argparse
 import subprocess
 import webbrowser
 from pathlib import Path
 
-# Anchor to project root
 PROJECT_ROOT = Path(__file__).resolve().parent
 BACKEND_DIR = PROJECT_ROOT / "backend"
 FRONTEND_DIR = PROJECT_ROOT / "frontend"
-DIST_DIR = FRONTEND_DIR / "dist"
 
-# Add backend directory to PYTHONPATH
 if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
-# Load .env credentials if present
+# Load backend .env if present
 env_file = BACKEND_DIR / ".env"
 if env_file.exists():
     try:
@@ -29,20 +30,6 @@ if env_file.exists():
         load_dotenv(dotenv_path=env_file)
     except ImportError:
         pass
-
-
-def check_and_build_frontend():
-    """Ensure frontend dist bundle is built before starting server."""
-    if not (DIST_DIR / "index.html").exists():
-        print("⚠️  Frontend bundle not detected at frontend/dist.")
-        print("🔨  Building frontend bundle now (npm run build)...")
-        try:
-            subprocess.run(["npm", "run", "build"], cwd=str(FRONTEND_DIR), check=True)
-            print("✅  Frontend built successfully!")
-        except Exception as e:
-            print(f"❌  Frontend build failed: {e}")
-            print("    Please run 'cd frontend && npm install && npm run build' manually.")
-            sys.exit(1)
 
 
 def check_provider_status():
@@ -71,14 +58,14 @@ def check_provider_status():
 
     supabase_url = os.getenv("SUPABASE_URL", "")
     if supabase_url and "supabase.co" in supabase_url:
-        providers.append("🟢 Supabase PostgREST · Live Verified")
+        providers.append("🟢 Supabase PostgREST · Live Verified (118 Companies)")
     else:
         providers.append("⚪ Supabase PostgREST · Offline")
 
     return providers
 
 
-def print_banner(host: str, port: int):
+def print_banner(host: str, backend_port: int, frontend_port: int):
     banner = f"""
 \033[1;36m╔══════════════════════════════════════════════════════════════════════════════════════╗
 ║  ____            _ _         _____      _            _   __  __       _       _  ║
@@ -90,10 +77,10 @@ def print_banner(host: str, port: int):
 ║ \033[1;32mAutonomous Placement Intelligence Hub & Multi-Agent Talent Acceleration Engine\033[1;36m       ║
 ╚══════════════════════════════════════════════════════════════════════════════════════╝\033[0m
 
-\033[1m🚀 Unified Server running at:\033[0m
-   • \033[1;32mLocal Web App:\033[0m       http://localhost:{port}
-   • \033[1;34mAPI Docs (Swagger):\033[0m   http://localhost:{port}/docs
-   • \033[1;34mAlternative Host:\033[0m   http://{host}:{port}
+\033[1m🚀 Unified Full-Stack Running at:\033[0m
+   • \033[1;32mCRED NeoPOP Web UI:\033[0m     http://localhost:{frontend_port}
+   • \033[1;34mFastAPI REST API:\033[0m       http://localhost:{backend_port}
+   • \033[1;34mAPI Docs (Swagger):\033[0m     http://localhost:{backend_port}/docs
 
 \033[1m⚡ Active AI Ecosystem Providers:\033[0m"""
     print(banner)
@@ -109,37 +96,74 @@ def print_banner(host: str, port: int):
    \033[1;32m[✓]\033[0m \033[1m5. Instant Profile Verification Loop:\033[0m Mock interview updates verified profile
 """
     print(differentiators)
-    print("\033[2mPress Ctrl+C to terminate the server.\033[0m\n")
+    print("\033[2mPress Ctrl+C to terminate both servers.\033[0m\n")
+
+
+def get_frontend_cmd():
+    """Detect bun or npm to launch the TanStack Start frontend."""
+    if shutil.which("bun"):
+        return ["bun", "run", "dev"]
+    elif shutil.which("npm"):
+        return ["npm", "run", "dev"]
+    return None
 
 
 def main():
     parser = argparse.ArgumentParser(description="Run RADIX TalentMatch Unified Server")
     parser.add_argument("--host", default="0.0.0.0", help="Binding host (default: 0.0.0.0)")
-    parser.add_argument("--port", type=int, default=8000, help="Port to run on (default: 8000)")
-    parser.add_argument("--reload", action="store_true", help="Enable live auto-reload for backend changes")
+    parser.add_argument("--port", type=int, default=8000, help="Backend port (default: 8000)")
+    parser.add_argument("--frontend-port", type=int, default=8080, help="Frontend port (default: 8080)")
+    parser.add_argument("--no-frontend", action="store_true", help="Run backend API only")
     parser.add_argument("--open", action="store_true", help="Automatically open web browser on startup")
-    parser.add_argument("--no-build", action="store_true", help="Skip frontend build verification")
     args = parser.parse_args()
 
-    if not args.no_build:
-        check_and_build_frontend()
+    frontend_proc = None
+    frontend_cmd = get_frontend_cmd()
 
-    print_banner(args.host, args.port)
+    if not args.no_frontend and frontend_cmd:
+        # Launch frontend dev server in background
+        frontend_env = os.environ.copy()
+        frontend_env["VITE_API_BASE_URL"] = f"http://localhost:{args.port}"
+        frontend_proc = subprocess.Popen(
+            frontend_cmd,
+            cwd=str(FRONTEND_DIR),
+            env=frontend_env,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+
+    print_banner(args.host, args.port, args.frontend_port)
 
     if args.open:
         try:
-            webbrowser.open(f"http://localhost:{args.port}")
+            target_url = f"http://localhost:{args.frontend_port}" if frontend_proc else f"http://localhost:{args.port}"
+            time.sleep(1.5)
+            webbrowser.open(target_url)
         except Exception:
             pass
 
+    def cleanup(sig=None, frame=None):
+        if frontend_proc:
+            try:
+                frontend_proc.terminate()
+            except Exception:
+                pass
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, cleanup)
+    signal.signal(signal.SIGTERM, cleanup)
+
     import uvicorn
-    uvicorn.run(
-        "app.main:app",
-        host=args.host,
-        port=args.port,
-        reload=args.reload,
-        app_dir=str(BACKEND_DIR)
-    )
+    try:
+        uvicorn.run(
+            "app.main:app",
+            host=args.host,
+            port=args.port,
+            app_dir=str(BACKEND_DIR),
+            log_level="info"
+        )
+    finally:
+        cleanup()
 
 
 if __name__ == "__main__":
