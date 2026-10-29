@@ -34,7 +34,8 @@ You can run RADIX TalentMatch via the **Unified Production Runner** (FastAPI ser
 ### Option A: Unified Single-Command Runner (Recommended)
 ```bash
 # Clone the repository
-git clone git@github-esotericdunce:esotericdunce/radix-reapers.git
+git clone https://github.com/esotericdunce/radix-reapers.git
+# Or via SSH: git clone git@github.com:esotericdunce/radix-reapers.git
 cd radix-reapers
 
 # Run the unified production runner (serves web app + API on port 8000)
