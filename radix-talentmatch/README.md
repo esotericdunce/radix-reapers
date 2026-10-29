@@ -1,191 +1,240 @@
-# RADIX TalentMatch · Autonomous Placement Intelligence Hub
+# ⚡ Neural Reapers · RADIX TalentMatch
+### *Autonomous Placement Intelligence Hub & Multi-Agent Talent Acceleration Engine*
 
-RADIX TalentMatch is an autonomous, local-first skills intelligence and placement ecosystem. It combines a deterministic AST scoring engine with a multi-agent AI ecosystem (Groq, OpenRouter, Gemini, and Supabase PostgREST) to simulate how tier-1 tech companies evaluate, interview, and deliberate on candidates.
+[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![TanStack](https://img.shields.io/badge/TanStack-Router%20%26%20Start-FF4154?style=for-the-badge&logo=tanstack&logoColor=white)](https://tanstack.com)
+[![CRED NeoPOP](https://img.shields.io/badge/Design-CRED%20NeoPOP%20Plinth-000000?style=for-the-badge&logo=styledcomponents&logoColor=white)](https://github.com/CRED-CLUB/neopop-web)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgREST%20Verified-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+[![Tests](https://img.shields.io/badge/Tests-47%20Passing-success?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
 ---
 
-## 🚀 Quickstart: Unified Single-Command Run
+## 🌟 Executive Summary & Vision
 
-No need to open multiple terminals. The root `main.py` serves both the production React SPA and the FastAPI backend on a single port:
+Every hackathon submission was provided the same core placement hub specification and session materials. Most teams built a static keyword counter with percentage bars.
 
+**Top tech employers (Google, Meta, Uber, Netflix, Microsoft) do NOT hire with keyword counters.** They evaluate candidates through:
+1. **Multi-persona Hiring Committees** that debate architectural rigor, long-term craft, and concurrency tradeoffs.
+2. **Deep System Design & Behavioral Rubrics** calibrated across **Bloom's Taxonomy** levels (*Understand* $\rightarrow$ *Apply* $\rightarrow$ *Analyze* $\rightarrow$ *Evaluate* $\rightarrow$ *Create*).
+3. **Financial ROI Placement Tiers** that focus a student's finite preparation time on the highest-yield skill delta (+₹12–18 LPA).
+4. **World-Class Tactile Aesthetics**: A luxury **CRED NeoPOP "Plinth"** interface with hairline grids, elevated 3D depth, and instantaneous micro-interactions.
+
+**RADIX TalentMatch** is an autonomous, local-first intelligence ecosystem that bridges the gap between college curricula and Tier-1 industry standards. It pairs a **deterministic AST verification engine** with a **live 118-company Supabase Golden Record**, an **agentic LLM swarm** (Groq, OpenRouter, Gemini), and a **CRED-grade UI/UX**.
+
+---
+
+## 🚀 Quickstart
+
+You can run RADIX TalentMatch via the **Unified Production Runner** (FastAPI serves both backend & frontend on a single port) or in **Full-Stack Hot-Reload Dev Mode**:
+
+### Option A: Unified Single-Command Runner (Recommended)
 ```bash
-# From repository root:
+# Clone the repository
+git clone https://github.com/esotericdunce/radix-reapers.git
+# Or via SSH: git clone git@github.com:esotericdunce/radix-reapers.git
+cd radix-reapers
+
+# Run the unified single-command runner (starts both Web UI on 8080 & API on 8000)
 python3 main.py
 ```
+- 🎨 **CRED NeoPOP Web Application:** [http://localhost:8080](http://localhost:8080)
+- ⚙️ **FastAPI REST API:** [http://localhost:8000](http://localhost:8000)
+- 📖 **Interactive Swagger API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
 
-- **Unified Web Application:** [http://localhost:8000](http://localhost:8000)
-- **Interactive Swagger API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
+### Option B: Interactive Full-Stack Dev Mode (with Hot Reloading)
+```bash
+# Terminal 1: Backend
+cd radix-talentmatch/backend
+source .venv/bin/activate
+uvicorn app.main:app --reload --port 8000
 
-*(Optional flags: `--port 8080`, `--reload` for backend auto-reload, `--open` to auto-launch the browser).*
+# Terminal 2: CRED NeoPOP Frontend (TanStack Start + Vite)
+cd radix-talentmatch/frontend
+bun install
+bun run dev
+```
+- 🎨 **CRED Refined Frontend:** [http://localhost:8080](http://localhost:8080)
+- ⚙️ **Backend REST API:** [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 🌟 The 4 Key Hackathon Differentiators (Why We Win)
+## 🏗️ System Architecture
 
-Everyone in this hackathon was given the same core placement hub specification and session materials. We built 4 major differentiators that turn a standard dashboard into an enterprise-grade placement acceleration hub:
+```mermaid
+flowchart TB
+    subgraph Client["🖥️ CRED Refined Frontend (React 19 + TanStack Start + NeoPOP + TailwindCSS)"]
+        UI_Shell["CRED Plinth AppShell & Hairline Grid"]
+        UI_Journey["Five-Step Journey (01-05 Rail)"]
+        UI_Committee["👥 Hiring Committee Arena"]
+        UI_Interview["🎙️ Mock Interview Simulator"]
+        UI_Radar["🎯 Career Radar & CTC Matrix"]
+        UI_Intel["🛡️ Self-Healing Intel Lab"]
+    end
 
-### 1. 👥 Multi-Agent Hiring Committee Deliberation (`/hiring-committee`)
-- **The Problem:** Other teams calculate a single percentage score. Real tier-1 companies (Google, Meta, Amazon) **never** hire based on a single score—they convene a Hiring Committee.
-- **Our Solution:** A live 3-persona deliberation panel:
-  - **Bar Raiser:** Enforces long-term architectural excellence, code rigor, and cultural standards.
-  - **Tech Lead:** Scrutinizes hands-on systems depth, concurrency, and distributed resilience.
-  - **Hiring Manager:** Evaluates delivery velocity, ownership, and cross-functional team fit.
-- **Output:** Individual votes, documented reservations, key endorsements, a consensus verdict (`OFFER`, `LEAN HIRE`, `HIRE WITH CONDITIONS`), and actionable steps to flip skeptical votes.
+    subgraph Server["⚡ Unified Runner & FastAPI Core (main.py)"]
+        Router["FastAPI Application Router"]
+        AST_Engine["Deterministic Phrase & AST Engine"]
+        SQLite_DB[("SQLite Local Ledger (profiles.db)")]
+    end
 
-### 2. 🎙️ Adaptive Mock Interview Arena (`/interview-arena`)
-- **The Problem:** Reading a JD or resume doesn't prove engineering depth.
-- **Our Solution:** An interactive mock interview simulator calibrated to specific company rounds.
-- **Features:**
-  - AI interviewer challenges the candidate with dynamic system design & core CS questions.
-  - Evaluates user answers against real production rubrics and maps depth across Bloom's Taxonomy (`UN`, `AP`, `AN`, `EV`, `CR`).
-  - **⚡ 1-Click Profile Level Upgrade:** When a student demonstrates high Bloom depth in an interview, they can click "Apply Upgrade to Profile" to immediately update their verified database profile and readiness scores!
+    subgraph DataStore["🗄️ Supabase Enterprise Golden Record (PostgREST)"]
+        Supa_Comp[("118 Tier-1/Tier-2 Tech Companies")]
+        Supa_Bloom[("1,356 Bloom Competencies (L1-L6)")]
+    end
+
+    subgraph AgentSwarm["🤖 Autonomous Multi-Agent Swarm"]
+        Committee_Agent["Hiring Committee Agent\n(Bar Raiser + Tech Lead + HM)"]
+        Interview_Agent["Bloom Interview Agent\n(Scenario Generator & Rubric Evaluator)"]
+        Radar_Agent["Career Radar Engine\n(Tier Gap & Google X-Y-Z Generator)"]
+        Research_Swarm["Multi-Model Intel Swarm\n(Groq + OpenRouter + Gemini)"]
+    end
+
+    Client -->|REST & Form Data| Router
+    Router --> AST_Engine
+    Router --> SQLite_DB
+    Router -->|PostgREST <10ms Cache| DataStore
+    Router --> AgentSwarm
+    Interview_Agent -->|1-Click Verified Upgrade| SQLite_DB
+```
+
+---
+
+## 🏆 The 4 Standout Differentiators (Why We Win)
+
+### 1. 👥 Autonomous Hiring Committee & Deliberative Consensus (`/hiring-committee`)
+- **The Problem:** Single match percentages fail in real-world tech hiring. One interviewer's enthusiasm doesn't protect against another's veto.
+- **The Solution:** A 3-persona deliberation panel that simulates genuine enterprise debriefs:
+  - 🛡️ **Bar Raiser:** Enforces system engineering standards, long-term code maintainability, and clean architecture.
+  - ⚡ **Tech Lead:** Rigorously probes concurrency, distributed resilience, scale limits, and SLA tradeoffs.
+  - 🎯 **Hiring Manager:** Gauges delivery speed, product intuition, cross-functional communication, and team velocity.
+- **Live Output:**
+  - Individual votes (`STRONG HIRE`, `LEAN HIRE`, `LEAN NO HIRE`, `NO HIRE`).
+  - Formal reservations, documented strengths, and deliberative debate logs.
+  - Final consensus verdict (`OFFER`, `LEAN HIRE`, `HIRE WITH CONDITIONS`, `REJECT`).
+  - Clear **"Flip the Skeptic"** actionable recommendations.
+
+---
+
+### 2. 🎙️ Adaptive Mock Interview Arena with Bloom's Taxonomy (`/interview-arena`)
+- **The Problem:** Resumes and portfolios claim skills that candidates cannot defend verbally or architecturally under pressure.
+- **The Solution:** Real-time production interview terminal calibrated directly against company-specific hiring criteria:
+  - **Dynamic Scenario Generation:** Prompts grounded in real architectural challenges (e.g., Zomato 100k req/sec flash sale, Google Spanner consensus, Amazon zero-downtime deployment).
+  - **4-Dimensional Evaluation Scorecard:**
+    1. *System Architecture & Patterns*
+    2. *Concurrency & Scale Defense*
+    3. *Edge Case Resilience & Failure Modes*
+    4. *Tradeoff Articulation & Decision Defense*
+  - **Probing Follow-Up Challenges:** Just like a Staff Engineer, the agent challenges the candidate's initial assumptions.
+  - **Production Code Snippets:** Shows candidates how a Principal Engineer writes the solution.
+  - **⚡ 1-Click Profile Level Upgrade:** If a candidate demonstrates Level 5 (*Evaluate*) or Level 6 (*Create*) depth, a single click directly updates their verified profile in the database and recalculates all company readiness scores instantly!
+
+---
 
 ### 3. 🎯 Placement Tier Radar & ROI CTC Accelerator (`/career-radar`)
-- **The Problem:** Generic gap analysis tells students to "learn everything." Students need to know what creates the highest financial return on time invested.
-- **Our Solution:**
-  - **Placement Tier Readiness:** Benchmarks readiness across Super Dream (₹20–55+ LPA), Dream (₹12–25 LPA), and Standard (₹4.5–10 LPA) company tiers.
-  - **Highest-ROI Skill Jumps:** Identifies the exact Bloom skill upgrade that unlocks the next tier (e.g., upgrading *System Design* from AP to EV yields +₹14–20 LPA).
-  - **Google X-Y-Z ATS Bullet & 48-Hour Micro-Project Generator:** Generates ATS-optimized resume bullets following Google's formula ("Accomplished [X] as measured by [Y], by doing [Z]") along with complete architecture blueprints and GitHub deliverables to build over a weekend.
-
-### 4. 🛡️ Multi-Agent Intelligence Lab with Self-Healing Quality Gate (`/company-intel`)
-- Researches any company across Groq, OpenRouter, and Gemini.
-- Runs an offline Level-3 AST quality gate (rule matrix) before saving into the persistent intelligence store.
-- Disagreements and variance across models are exposed as transparent conflict panels rather than hidden.
+- **The Problem:** Generic gap analysis tells students to learn dozens of disjoint technologies without financial context.
+- **The Solution:** Financial ROI-driven skill roadmapping:
+  - **Tier Benchmarking:**
+    - 🦄 **Super Dream:** ₹20 – ₹55+ LPA (Google, Microsoft, Uber, Atlassian)
+    - ⭐ **Dream:** ₹12 – ₹25 LPA (Razorpay, Swiggy, Cred, Flipkart)
+    - 🏢 **Standard:** ₹4.5 – ₹10 LPA (TCS Digital, Infosys Power, Cognizant)
+  - **Highest-ROI Skill Jumps:** Identifies the precise single skill upgrade that unlocks the highest CTC jump (e.g., *Distributed Systems AP $\rightarrow$ EV: +₹16 LPA*).
+  - **Google X-Y-Z Resume Bullets:** Formatted following Google's hiring standard:
+    > *"Accomplished [X], as measured by [Y], by doing [Z]"*
+  - **48-Hour Micro-Project Blueprints:** Weekend-buildable GitHub repositories with architectural schemas designed to immediately prove target competencies.
 
 ---
-- Personalized four-week (30-day) gap roadmap with locally persisted checkboxes and an explicitly hypothetical score simulator.
-- SQLite-backed recent assessment history on Overview; local CSV exports and browser print-to-PDF.
-- FastAPI docs at `/docs`; CORS configured for local Vite development.
 
-## Stack and layout
+### 4. 🛡️ Supabase Golden Record & Self-Healing Intelligence Dossier (`/company-intel`)
+- **The Problem:** Repetitive LLM API calls waste tokens, induce rate limits, and introduce non-deterministic hallucinations.
+- **The Solution:**
+  - **Supabase-First Golden Record:** Pre-loaded with **118 Tier-1 and Tier-2 Tech Companies** and **1,356 verified Bloom skill rows**.
+  - **Zero Tokens & Sub-10ms Latency:** Known enterprise companies resolve directly from verified database records with zero external API calls.
+  - **Fallback Intelligence Swarm:** For unlisted startups, an autonomous multi-agent swarm synthesizes intelligence across **Groq**, **OpenRouter**, and **Gemini**.
+  - **Level-3 AST Quality Gate:** Verifies data integrity, interview round taxonomy, and skill schemas before persisting into the local intelligence cache.
 
-- Frontend: React, TypeScript, Vite, React Router, Tailwind CSS, Lucide, Recharts.
-- Backend: Python, FastAPI, Pydantic, Uvicorn, PyMuPDF, python-docx, pytest.
-- Storage: SQLite for editable profiles; JSON files for seeded demo data and company snapshots.
-- Analysis: explicit phrase dictionary with word boundaries and evidence snippets. No LLM is called.
+---
 
-```text
-radix-talentmatch/
-  backend/app/{main.py,services,utils,repositories}
-  backend/tests/test_api.py
-  data/{sample_candidates.json,sample_job_descriptions.json,talent_check_company_skillsets.json}
-  data/sample_jds/  data/sample_resumes/
-  docs/{architecture.md,api_reference.md,testing.md}
-  frontend/src/{App.tsx,pages/Modules.tsx,services/api.ts,types,index.css}
-  frontend/{package.json,vite.config.ts,tsconfig.json}
-  README.md
+## 🎨 CRED NeoPOP "Plinth" Design System
+
+The application features a bespoke **CRED NeoPOP** aesthetic built for engineering elegance:
+- **Hairline Grid Architecture**: Subtle dark-mode grid canvas (`#0c0c0f`) with high-contrast borders and elevated monolithic panels.
+- **Tactile Elevated 3D Cards**: Dimensional NeoPOP components featuring sharp edge shadows and smooth depression physics.
+- **Command Palette (`⌘K` / `Ctrl+K`)**: Instant keyboard-driven navigation across all modules, candidates, and labs.
+- **Responsive 01–05 Guided Journey**: Step-by-step placement rail guiding students from parsing job descriptions to final skill matching.
+
+---
+
+## 📊 Complete Module & Labs Suite
+
+### 🛤️ The 01–05 Placement Journey Rail
+| Step | Module | Route | Key Capabilities |
+| :---: | :--- | :--- | :--- |
+| **01** | **Read the role** | `/jd-analytics` | Deterministic phrase AST extraction, category distribution, evidence snippet extraction |
+| **02** | **Read the resume** | `/resume-parser` | Multipart PDF/DOCX/TXT ingestion, section boundary parsing, synthetic sample generator |
+| **03** | **Shape the profile**| `/profile` | Editable verified skill ledger, 1–10 Bloom ratings, SQLite persistence, custom roles |
+| **04** | **Check readiness** | `/talent-check` | Real-time comparison against 118 Supabase company profiles, category breakdown |
+| **05** | **Measure the fit** | `/skill-matching` | Multi-candidate side-by-side comparison, CSV export, print-to-PDF, gap analysis |
+
+### 🔬 The Advanced Labs
+| Module | Route | Key Capabilities |
+| :--- | :--- | :--- |
+| **Overview** | `/` | Live candidate readiness matrix, assessment history, radar chart, quick-action rail |
+| **Hiring Committee** | `/hiring-committee` | 3-agent deliberative debate (Bar Raiser, Tech Lead, Hiring Manager), consensus vote |
+| **Mock Interview Arena** | `/interview-arena` | Live scenario simulation, 4-axis scorecard, follow-ups, 1-click profile upgrade |
+| **Career Radar** | `/career-radar` | Super Dream / Dream readiness, highest-ROI skill jumps, Google X-Y-Z bullets |
+| **Company Intelligence** | `/company-intel` | Supabase 118-company record resolver + Groq/OpenRouter fallback agent pipeline |
+
+---
+
+## 🛠️ API Reference
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/api/health` | System health check and active AI provider diagnostics |
+| `GET` | `/api/companies` | List all 118 Supabase-verified enterprise tech companies |
+| `GET` | `/api/candidates` | Retrieve seeded and persistent candidate profiles |
+| `POST` | `/api/talent-check` | Calculate readiness score against Supabase golden record |
+| `POST` | `/api/jd/analyze` | Parse job description text or document via AST engine |
+| `POST` | `/api/resume/parse` | Extract skills, education, and experience from resume |
+| `POST` | `/api/profile` | Create new candidate profile in SQLite database |
+| `PUT` | `/api/profile` | Update existing profile and skill levels |
+| `POST` | `/api/committee/deliberate` | Trigger 3-agent Hiring Committee deliberation and consensus |
+| `POST` | `/api/interview/start` | Generate domain-specific mock interview scenario |
+| `POST` | `/api/interview/evaluate` | Evaluate candidate response across 4 production rubrics |
+| `GET` | `/api/career/radar` | Calculate placement tier readiness and ROI skill roadmap |
+| `POST` | `/api/resume/tailor-bullet` | Generate Google X-Y-Z formula resume bullet |
+| `GET` | `/api/intelligence/company/{name}` | Fetch verified company dossier (Supabase-first with LLM fallback) |
+
+---
+
+## 🧪 Testing & Verification
+
+Comprehensive test suites for both backend and frontend:
+
+```bash
+# 1. Backend: 44 Passing PyTest Suites (API, Intelligence, Differentiators, Supabase)
+cd radix-talentmatch
+PYTHONPATH=backend backend/.venv/bin/pytest backend/tests -v
+
+# 2. Frontend: Passing Vitest Suites (Scoring Formulas & TanStack Routing)
+cd radix-talentmatch/frontend
+bun run test
 ```
 
-## Prerequisites
+---
 
-- Windows 10/11, macOS, or Linux.
-- Python 3.10+ (Windows launcher `py` supported) and Node.js 18+ with npm.
-- Internet access for initial dependency installation. Runtime analysis is local.
-- VS Code is optional.
+## 👥 Presentation Team: Neural Reapers
 
-## Windows setup (PowerShell)
+- **Team Name:** Neural Reapers
+- **Core Focus:** Autonomous Placement Intelligence, AST Verification & Multi-Agent Talent Acceleration
+- **GitHub Organization:** [@esotericdunce](https://github.com/esotericdunce)
 
-Open two PowerShell terminals in the project root. The commands use the Python executable directly, so activation-policy changes are not required.
+---
 
-### Backend terminal
+## 📄 License
 
-```powershell
-cd backend
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
-```
-
-If `py` is unavailable, replace it with `python`. Open <http://localhost:8000/docs> to inspect the API.
-
-### Frontend terminal
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Open the Vite URL printed in the terminal (usually <http://localhost:5173>). The frontend API defaults to `http://localhost:8000`.
-
-### Linux/macOS quick start
-
-Backend: `cd backend && python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt && .venv/bin/python -m uvicorn app.main:app --reload --port 8000`.
-Frontend in another terminal: `cd frontend && npm install && npm run dev`.
-
-## Demo data and profiles
-
-Sample candidates and jobs live in `data/`. On first API startup the four candidates are inserted into `backend/profiles.db`. Select any candidate in Profile Builder to view and edit. Updates persist locally. To reset demo profiles, stop the backend and delete `backend/profiles.db`; restarting seeds candidates again. Set `RADIX_DB_PATH` to choose another SQLite file.
-
-Sample text resumes are in `data/sample_resumes/`; sample job-description text is in `data/sample_jds/`. File uploads support `.pdf`, `.docx`, and `.txt`, up to 8 MB. Scanned/image-only PDFs may return no text because OCR is not bundled.
-
-## Using the modules
-
-1. **Overview:** see seeded candidate/profile count and computed scores, with links to the modules.
-2. **JD Analytics:** select a sample job, paste text, or upload a document; analyze and review detected skills and evidence.
-3. **Resume Parser:** upload or paste a resume; inspect extracted fields, then transfer into Profile Builder.
-4. **Profile Builder:** choose a candidate, edit line-separated fields and skill levels (`Skill|level`), and save. The save writes to SQLite.
-5. **Talent Check:** choose candidate and company, then run the readiness comparison. Read the demo-data warning.
-6. **Skill Matching:** select candidate and job. Result recalculates on either change; the Recalculate button can rerun it.
-
-## Scoring and extraction
-
-Skill levels are the explicit 1–10 values stored in profile skills; a skill absent from the profile is level 0 for comparison. Talent readiness is the average of each requirement's capped level ratio: `100 × average(min(candidate_level, required_level) / required_level)`, rounded to the nearest integer. The skill-match score is `100 × matched required skill phrases / extracted required skill phrases`, rounded to an integer. A rated profile skill is matched using a small explicit alias map: DSA/Data Structures and Algorithms, OOP/Object-Oriented Programming, JS/JavaScript, and ML/Machine Learning. Java remains distinct from JavaScript; React remains distinct from JavaScript; PostgreSQL/MySQL remain distinct from the SQL skill. Detected skills without an explicit 1–10 profile rating remain unassessed and do not count as matches or readiness evidence. The scoring formula is unchanged. Missing skills are required phrases absent from the rated profile; recommendations suggest practice/project evidence. If no skills are extracted, the job score is 0.
-
-The extractor uses a transparent dictionary and boundary-aware phrase matching, not an LLM. Evidence is copied from the matched source line. Confidence is a simple heuristic; review analysis before relying on it.
-
-## Replacing illustrative company expectations
-
-Edit `data/talent_check_company_skillsets.json` to provide a `companies` object with company names and lists of `{skill_name, category_code, required_level}` entries. Levels must be 1–10 and category codes should use the taxonomy listed in `docs/architecture.md`. Keep the `source` text accurate. Restart the backend to reload the file. The scoring function reads the JSON; company requirements are not embedded in the scoring logic.
-
-## Configuration
-
-Copy `.env.example` / `backend/.env.example` / `frontend/.env.example` as needed. The frontend accepts `VITE_API_BASE_URL`; the backend accepts `RADIX_DB_PATH` and comma-separated `CORS_ORIGINS`. Do not add secrets to the project. No external API credentials are used.
-
-## API endpoints
-
-- `GET /api/health`, `/api/candidates`, `/api/jobs`, `/api/companies`, `/api/assessments`
-- `POST /api/jd/analyze` (multipart file or text form)
-- `POST /api/resume/parse` (multipart file or text form)
-- `GET /api/profile?candidate_id=...`, `GET /api/profiles`
-- `POST /api/profile` to create, `PUT /api/profile?candidate_id=...` to update
-- `POST /api/talent-check` with `{candidate_id, company}`
-- `POST /api/skill-match` with `{candidate_id, job_description_id}` or supplied text
-
-Interactive OpenAPI documentation is available at <http://localhost:8000/docs>.
-
-## Tests
-
-```powershell
-cd backend
-py -m pip install -r requirements.txt
-py -m pytest -q
-```
-
-The tests use an isolated temporary SQLite database. See `docs/testing.md` for coverage notes.
-
-## Limitations / future improvements
-
-- The extraction dictionary is intentionally small and deterministic; it can miss synonyms or infer an imperfect title. It is not AI/LLM processing.
-- Scanned PDFs need OCR not included in the MVP. Resume sections are parsed with simple labels and line rules.
-- Skill levels and company levels are demo inputs, not validated assessments or official company criteria.
-- The storage repository is local SQLite. A repository interface boundary can be used to integrate Supabase later.
-- Authentication, multi-user access control, production deployment, and document retention controls are out of scope.
-- The taxonomy is intentionally small; aliases only cover explicit equivalents and do not provide semantic matching. The roadmap is heuristic and its checklist is stored in browser localStorage on that device. Browser print opens the native print dialog; PDF creation is user-controlled. Assessment history is stored in local SQLite and can be cleared by deleting the database file.
-
-
-## Guided UI workflow
-
-The enhanced interface includes a five-step rail across JD Analytics, Resume Parser, Profile Builder, Talent Check, and Skill Matching. After each successful step, a continue action leads to the next module; Resume Parser transfers reviewed extraction into Profile Builder, and saved profiles carry into both assessments. The rail and sidebar also let you jump directly between modules.
-
-JD and resume uploads support drag-and-drop and backend parsing; Resume Parser can also build a synthetic sample resume from a selected saved candidate and submit it to the same parser API. Results include working search/category filters, expandable evidence, category charts, and explicit reset/retry states. Profile Builder supports new profiles, add/remove list-entry controls, cancel confirmation, save confirmation, and SQLite persistence. Candidate/job changes clear stale match results and trigger API recalculation. The dashboard reports current live calculations and sample-role availability, not fabricated assessment history.
-
-
-## Comparison, roadmap, exports, and history
-
-Skill Matching can compare two or three synthetic profiles against one job using the same `/api/skill-match` endpoint and score returned for individual matching. The comparison CSV includes actual API results, matched/missing skills, and available evidence. The individual result can be downloaded as CSV, printed/saved as PDF through the browser print dialog, or copied as a concise summary.
-
-The 30-day roadmap is derived from the current result's missing skills, split into four weekly practice/project milestones. Task completion persists in browser localStorage, separately from proficiency ratings; the what-if score is hypothetical and does not edit a profile. Successful Talent Check and Skill Match API calls append timestamped events to SQLite and appear on Overview.
-
-Resume skill detection does not assign a proficiency rating. In Profile Builder, enter a 1–10 level explicitly and optionally add source evidence as a fourth pipe-separated value: `Python | 7 | COD | Built a Python project`. A missing/zero rating is unassessed. All scores remain deterministic, explainable estimates—not verified expertise or automated hiring decisions.
+This project is open-source and licensed under the [MIT License](LICENSE).

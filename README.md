@@ -38,10 +38,11 @@ git clone https://github.com/esotericdunce/radix-reapers.git
 # Or via SSH: git clone git@github.com:esotericdunce/radix-reapers.git
 cd radix-reapers
 
-# Run the unified production runner (serves web app + API on port 8000)
+# Run the unified single-command runner (starts both Web UI on 8080 & API on 8000)
 python3 main.py
 ```
-- 🌐 **Web Application:** [http://localhost:8000](http://localhost:8000)
+- 🎨 **CRED NeoPOP Web Application:** [http://localhost:8080](http://localhost:8080)
+- ⚙️ **FastAPI REST API:** [http://localhost:8000](http://localhost:8000)
 - 📖 **Interactive Swagger API Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ### Option B: Interactive Full-Stack Dev Mode (with Hot Reloading)
